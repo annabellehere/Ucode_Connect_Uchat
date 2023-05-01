@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-css-provider-path css/all.css -->
+  <object class="GtkWindow" id="window1">
+    <property name="width-request">500</property>
+    <property name="height-request">900</property>
+    <property name="can-focus">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <child>
+      <object class="GtkFixed" id="fix">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow" id="scroll">
+            <property name="width-request">200</property>
+            <property name="height-request">200</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport" id="viewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <!-- n-columns=3 n-rows=3 -->
+                  <object class="GtkGrid" id="grid">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">126</property>
+            <property name="y">445</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="addMan">
+            <property name="label" translatable="yes">Add</property>
+            <property name="width-request">100</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">276</property>
+            <property name="y">367</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="inputName">
+            <property name="width-request">162</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">78</property>
+            <property name="y">371</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CreateGroup">
+            <property name="label" translatable="yes">Create group</property>
+            <property name="width-request">136</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">156</property>
+            <property name="y">660</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="GroupName">
+            <property name="width-request">162</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="changed" handler="on_GroupName_changed" swapped="no"/>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">158</property>
+            <property name="y">84</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="LabelGroup">
+            <property name="width-request">227</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Enter group chat name: </property>
+            <style>
+              <class name="label"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">94</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ImageSettingGroup">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">235</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ChangeAvaGroup">
+            <property name="label" translatable="yes">Choose an avatar</property>
+            <property name="width-request">172</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_ChangeAvaGroup_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">154</property>
+            <property name="y">162</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-css-provider-path css/login.css -->
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">700</property>
+    <child>
+      <object class="GtkFixed" id="fixed">
+        <property name="width-request">1200</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="LogOut">
+            <property name="label" translatable="yes">Log Out</property>
+            <property name="width-request">155</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_Log Out_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">492</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ChangeName">
+            <property name="label" translatable="yes">Change Name</property>
+            <property name="width-request">155</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_ChangeName_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">240</property>
+            <property name="y">395</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="inputChangeName">
+            <property name="width-request">140</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">395</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="inputChangePassword">
+            <property name="width-request">140</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">337</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ChangePassword">
+            <property name="label" translatable="yes">Change Password</property>
+            <property name="width-request">155</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_ChangePassword_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">240</property>
+            <property name="y">337</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ChangeAvatar">
+            <property name="label" translatable="yes">Change Avatar</property>
+            <property name="width-request">155</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_ChangeAvatar_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">240</property>
+            <property name="y">208</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="GoBack">
+            <property name="label" translatable="yes">Go Back</property>
+            <property name="width-request">155</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_GoBack_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">151</property>
+            <property name="y">555</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ImageSettings">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">78</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="window-set"/>
+    </style>
+  </object>
+</interface>

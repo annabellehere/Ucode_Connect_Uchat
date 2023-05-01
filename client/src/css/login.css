@@ -1,0 +1,225 @@
+.inputs {
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(153, 98, 30, 0.333);
+    /*box-shadow: inset 2px 5px 10px rgba(0, 129, 74, 0.3);*/
+    transition: 300ms ease-in-out;
+}
+
+.userEditMessage{
+    opacity: 0.3;
+
+    background-image: url("../img/pencil-edit-button.svg");
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.userDeleteMessage{
+    opacity: 0.3;
+
+    background-image: url("../img/trash_can.png");
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(50, 48, 49);
+    font-family: 'Courier New', Courier, monospace;
+}
+.userDeleteMessage:hover{
+    opacity: 1;
+    /* background-color: black; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.WaitingGif{
+    background-color: #ba5d6e;
+}
+.userEditMessage:hover{
+    opacity: 1;
+
+    /* background-color: black; */
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.errorType, .errorMessage{
+    color:rgb(255, 255, 243);
+}
+.errorDialog{
+    background-color: #ba5d6e;
+    font-weight: 600; 
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15%;
+}
+.errorCloseButton{
+    background-color: black;
+}
+
+.input-message {
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background: rgba(164, 121, 99, 0.849);
+    /*box-shadow: inset 2px 5px 10px rgba(0, 129, 74, 0.3);*/
+    transition: 300ms ease-in-out;
+}
+.window {
+    background: rgb(7, 98, 201);
+    background-image: url("../img/wc_finale_chetkiy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.window-reg {
+    background: rgb(50, 48, 49);
+    /* background-image: url("../img/jak.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.window-set {
+    background: rgb(7, 98, 201);
+    background-image: url("../img/settings\ bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.window-main {
+    /*background: rgb(36, 255, 189);
+    */background-image: url("../img/dark_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.button {
+    background: rgba(0, 170, 96, 0.89);
+    border: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 243);
+    padding: 8px 12px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+button {
+    background: rgba(1, 170, 97, 0.932);
+    border: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 243);
+    padding: 8px 12px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.editMessageClose{
+    opacity: 0.3;
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.editMessageClose:hover{
+    opacity: 1;
+}
+.editMessageWindow{
+    border-radius: 10px;
+    border:7px solid rgba(164, 121, 99, 0.849);;
+    /* border-color:rgb(255, 255, 243); */
+}
+button:hover {opacity: 1}
+  
+.button:hover {opacity: 1}
+
+.label {
+    color: rgb(255, 255, 243);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    /*text-shadow: 2px 2px 4px #000000;*/
+    padding: 10px;
+    background: rgb(0, 170, 96);
+    /*border: 2px solid #ffffff;
+    */border-radius: 10px;
+}
+
+.message:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.message {
+    color: rgb(50, 48, 49);
+    margin: 4px 2px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    /*text-shadow: 2px 2px 4px #000000;*/
+    padding: 10px;
+    background-color: rgba(255, 255, 243, 0.842);
+    /*border: 2px solid #ffffff;
+    */border-radius: 10px;
+   /*max-width: 300px;*/
+}
+
+.ph-set {
+    /*background: rgb(7, 98, 201);
+    */background-image: url("../img/shrek.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px;
+    border-radius: 20px;
+}
+
+.logo {
+    color: rgb(255, 255, 243);
+    outline: none;
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 80px;
+    font-family:'Courier New', Courier, monospace;
+    /*background: rgba(153, 98, 30, 0.333);*/
+    /*box-shadow: inset 2px 5px 10px rgba(0, 129, 74, 0.3);*/
+    transition: 300ms ease-in-out;
+}
+
+.name-main {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    /*text-shadow: 2px 2px 4px #000000;*/
+    padding: 10px;
+    background: rgba(0, 170, 96, 0.336);
+    /*border: 2px solid #ffffff;
+    */border-radius: 10px;
+}
+
+.window-group {
+    background: rgb(50, 48, 49);
+    /* background-image: url("../img/jak.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

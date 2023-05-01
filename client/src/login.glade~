@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-css-provider-path css/all.css -->
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">700</property>
+    <property name="gravity">center</property>
+    <child>
+      <object class="GtkFixed" id="fixed">
+        <property name="width-request">1000</property>
+        <property name="height-request">700</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="LogIn">
+            <property name="label" translatable="yes">Log In</property>
+            <property name="width-request">71</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_LogIn_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">450</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="inputPassword">
+            <property name="width-request">162</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Type in your password.</property>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">604</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelPassword">
+            <property name="width-request">92</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Password:</property>
+            <style>
+              <class name="label"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">634</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="inputUsername">
+            <property name="width-request">162</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <style>
+              <class name="inputs"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">604</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelUsername">
+            <property name="width-request">92</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Username:</property>
+            <style>
+              <class name="label"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">635</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Register">
+            <property name="label" translatable="yes">Register</property>
+            <property name="width-request">88</property>
+            <property name="height-request">48</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_Register_clicked" swapped="no"/>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">450</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Logo">
+            <property name="width-request">487</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">SwampChat</property>
+            <style>
+              <class name="logo"/>
+            </style>
+          </object>
+          <packing>
+            <property name="y">37</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="LogoImage">
+            <property name="width-request">250</property>
+            <property name="height-request">208</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">543</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="window"/>
+    </style>
+  </object>
+</interface>

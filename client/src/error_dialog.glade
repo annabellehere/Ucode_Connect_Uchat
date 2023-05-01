@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkDialog" id="errorDialog">
+    <property name="can-focus">False</property>
+    <property name="no-show-all">True</property>
+    <property name="hexpand">False</property>
+    <property name="type">popup</property>
+    <property name="modal">True</property>
+    <property name="window-position">mouse</property>
+    <property name="type-hint">dialog</property>
+    <property name="urgency-hint">True</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="baseline-position">top</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">end</property>
+            <property name="homogeneous">True</property>
+            <property name="layout-style">end</property>
+            <child type="center">
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="closeErrorButton">
+                <property name="label" translatable="yes">Got it</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">center</property>
+                <style>
+                  <class name="errorCloseButton"/>
+                </style>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="pack-type">end</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="errorType">
+            <property name="name">errorType</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-top">10</property>
+            <property name="label" translatable="yes">Error</property>
+            <style>
+              <class name="errorType"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="errorMessage">
+            <property name="name">errorMessage</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="margin-start">10</property>
+            <property name="margin-end">10</property>
+            <property name="label" translatable="yes">label</property>
+            <property name="justify">center</property>
+            <property name="wrap">True</property>
+            <style>
+              <class name="errorMessage"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="pack-type">end</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="errorDialog"/>
+    </style>
+  </object>
+</interface>

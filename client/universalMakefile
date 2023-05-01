@@ -1,0 +1,49 @@
+BIN := uchat
+
+BIN_TARGET := UCHAT
+
+LIBS :=  ../libmx/libmx.a -lm -lpthread
+
+
+GTK_FLAGS := `pkg-config --cflags gtk+-3.0`
+GTK_LIBS := `pkg-config --libs gtk+-3.0`
+SSL_FLAGS := `PKG_CONFIG_PATH="/usr/local/opt/openssl@3/lib/pkgconfig" pkg-config --cflags openssl`
+SSL_LIBS := `PKG_CONFIG_PATH="/usr/local/opt/openssl@3/lib/pkgconfig" pkg-config --libs openssl`
+SQL_FLAGS := `pkg-config --cflags sqlcipher`
+SQL_LIBS := `pkg-config --libs sqlcipher`
+JSON_FLAGS := `pkg-config --cflags json-c`
+JSON_LIBS := `pkg-config --libs json-c`
+
+
+CFLAGS := $(GTK_FLAGS) $(SSL_FLAGS) $(SQL_FLAGS) $(JSON_FLAGS) 
+LDFLAGS := $(GTK_LIBS) $(SSL_LIBS) $(SQL_LIBS) $(JSON_LIBS) 
+  
+.PHONY = all clean uninstall reinstall
+
+CC = clang -std=c11  -Wall -Wextra -Werror -Wpedantic \
+-Wno-unused-parameter -Wno-deprecated 
+
+SOURCE := $(wildcard src/*.c)
+
+HEAD := $(wildcard inc/*.h)
+
+OBJECTS = $(addprefix obj/,$(notdir $(SOURCE:.c=.o)))
+
+all: $(OBJECTS) $(BIN_TARGET)
+
+$(BIN_TARGET): $(SOURCE) $(OBJECTS) $(HEAD)
+	@$(CC) $(CFLAGS)  -o $(BIN) $(OBJECTS) $(LDFLAGS) $(LIBS)
+
+
+obj/%.o: src/%.c $(HEAD)
+	@mkdir -p obj 
+	@$(CC) $(CFLAGS)  -c $< -o $@
+
+uninstall: clean
+	@rm -f $(BIN) 
+
+clean:
+	@rm -drf obj 
+	@rm -f $(wildcard *.o) 
+
+reinstall: uninstall $(BIN_TARGET)
