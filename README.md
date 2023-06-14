@@ -15,6 +15,7 @@ Messaging client/server application for \*nix with C
 [Vira Karalnik](https://github.com/jinjergirl)
 
 
+
 Default Makefile applies only to MacOS with brew installed
 
 To compile for apt-based Linux distributions - delete existing Makefile and rename universalMakefile to it
