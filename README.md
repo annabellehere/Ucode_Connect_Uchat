@@ -25,7 +25,9 @@ Messaging client/server application for \*nix with C
 <img src="https://i.imgur.com/jYdtf2Z.png">
 
 ## Demonstration on youtube
-[SwampChat]([https://youtu.be/clrqZ5buY4U](https://www.youtube.com/watch?v=SFnbKBlhFRg))
+[SwampChat](https://youtu.be/SFnbKBlhFRg?si=fCGiVVGdM3p24QEx)
+
+
 
 Default Makefile applies only to MacOS with brew installed
 
